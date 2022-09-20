@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--========== CSS ==========-->
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Contatanos</title>
+</head>
+
+<body>
+
+    <!--========== HEADER ==========-->
+
+    <header class="header">
+        <div class="header__container">
+            <img src="../img/perfil.jpg" alt="" class="header__img">
+            <a href="../../index.html" class="header__logo"><h1>RoyalPets</h1></a>
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+        </div>
+    </header>
+
+    <!--========== CONTENTS ==========-->
+
+    <main>
+
+        <!-- ======= Contatanos Section ======= -->
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contato</h2>
+                    <p>Fazer um comentario ou apenas quer dizer oi? Nossa caixa de entrada messages está aberta para
+                        todos.
+                    </p>
+                </div>
+                <div class="row" data-aos="fade-in">
+                    <div class="col-lg-5 d-flex align-items-stretch">
+                        <div class="info">
+                            <div class="address">
+                                <i class="icofont-google-map"></i>
+                                <h4>Nosso Endereço</h4>
+                                <p>R. Salvador de Medeiros, 449 - São Miguel Paulista, São Paulo - SP, 08010-020</p>
+                            </div>
+
+                            <div class="email">
+                                <i class="icofont-envelope"></i>
+                                <h4>Email:</h4>
+                                <p>Totte@gmail.com</p>
+                            </div>
+
+                            <div class="phone">
+                                <i class="icofont-phone"></i>
+                                <h4>Telefone:</h4>
+                                <p>+55 1111111111</p>
+                            </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3659.1446558884563!2d-46.4444309!3d-23.4912986!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce617cd336b765%3A0xcd102f680ff2eebe!2sS%C3%A3o%20Miguel%20Paulista!5e0!3m2!1spt-PT!2sbr!4v1663647954228!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <!-- formulario de contacto en html y css -->
+
+                    <div class="formulario">
+                        <h1>Formulario de contato</h1>
+                        <h3>Escreva-nos e entraremos em contato em breve</h3>
+                        <form action="submeter-formulario.php" method="post">
+
+                            <p>
+                                <label for="nombre" class="colocar_nombre">Nome
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                                    placeholder="Escreva seu nome">
+                            </p>
+
+                            <p>
+                                <label for="email" class="colocar_email">Email
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <input type="email" name="introducir_email" id="email" required="obligatorio"
+                                    placeholder="Escreva seu Email">
+                            </p>
+
+                            <p>
+                                <label for="telefone" class="colocar_telefono">Telefone
+                                </label>
+                                <input type="tel" name="introducir_telefono" id="telefono"
+                                    placeholder="Escreva seu telefone">
+                            </p>
+
+                            <p>
+                                <label for="website" class="colocar_website">Website (sim tiver)
+                                </label>
+                                <input type="url" name="introducir_website" id="website"
+                                    placeholder="Escreva a URL de seu website">
+                            </p>
+
+                            <p>
+                                <label for="asunto" class="colocar_asunto">Caso
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                                    placeholder="Escreva o caso">
+                            </p>
+
+                            <p>
+                                <label for="mensaje" class="colocar_mensaje">Message
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"
+                                    required="obligatorio" placeholder="Deixa aquí seu comentario..."></textarea>
+                            </p>
+
+                            <button type="submit" name="enviar_formulario" id="enviar">
+                                <p>Enviar</p>
+                            </button>
+
+                            <p class="aviso">
+                                <span class="obligatorio"> * </span>Os campos são obrigatorios.
+                            </p>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Contatanos Section -->
+
+    </main>
+
+    <!--========== MAIN JS ==========-->
+
+    <script src="../js/main.js"></script>
+    <a href="../../index.html" target="_blank" class="nav__link active"><h2>Voltar</h2></a><br>
+</body>
+</html>
